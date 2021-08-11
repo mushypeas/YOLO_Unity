@@ -456,7 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objectList: []
   _savePath: ~
-  _imageResolution: 1080
+  _dataImageResolution: 1080
   _dataSize: 10
 --- !u!114 &1380499759
 MonoBehaviour:
