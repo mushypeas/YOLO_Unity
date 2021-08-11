@@ -454,6 +454,7 @@ MistyRose1
 salmon
 MistyRose3
 white
+White
 gray100
 grey100
 grey100

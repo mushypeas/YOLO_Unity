@@ -9,7 +9,7 @@ public class ScreenCapturer : MonoBehaviour {
     private static Texture2D backgroundTexture;
     private static Camera screenCamera;
     void Start() {
-        resolution = Settings.imageResolution;
+        resolution = Settings.dataImageResolution;
         filePath = Settings.savePath;
         backgroundRenderer = GameObject.Find("Background").GetComponent<SpriteRenderer>();
         backgroundTransform = GameObject.Find("Background").GetComponent<Transform>();
