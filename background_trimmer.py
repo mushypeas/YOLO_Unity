@@ -2,6 +2,8 @@ import sys
 from glob import glob
 from os import system as terminal
 
+# TODO: give more flexibility to arguments
+
 class BackgroundTrimmer:
     def __init__(self, args):
         self.args = args
@@ -28,7 +30,7 @@ class BackgroundTrimmer:
         i = 0
         for image in self.image_list:
             print("converting '{}'...".format(image))
-            terminal("convert {} -fuzz {}% -trim -fuzz {}%% -transparent '{}' {}/out/{}.png".format(image, self.trim_fuzz, self.transparent_fuzz, self.bg_color, self.save_path, i))
+            terminal("convert {} -resize 256 -fuzz {}% -trim -fuzz {}%% -transparent '{}' -trim {}/out/{}.png".format(image, self.trim_fuzz, self.transparent_fuzz, self.bg_color, self.save_path, i))
             i += 1
 
         print("\nDone! Converted images are saved in '{}out'.".format(self.save_path))
